@@ -1,0 +1,25 @@
+a. Test this UI mock-up, can you find any problems with this screen? (Please pay
+attention to all functional aspects such as Security, Usability, Performance, etc.).
+
+* The amount to pay should appear more clearly, different from the input elements
+* the amount does not display currency
+* not enough vertical spacing between items
+* cardholder name appears below card number input and may be confusing (the user might type the name instead of number)
+* missing the CVV number of the credit card
+* bad grouping of items - the 2 columns are confusing, it would probably be easier for the user to have a single column 
+* The button label “continue” is not meaningful, as it seems it proceeds to payment therefore it should be labeled as “Confirm payment” or “proceed payment”
+* The card type should show “select type” and not a default value (for consistency with other elements)
+* hopefully if the some input is invalid it is expected that previous input is remembered in the form
+* the button continue (proceed to pay) should appear different from the cancel button, in general cancel buttons are gray and action buttons are colored
+
+
+b. Can you write 2–3 sample test cases for this functionality?
+
+* Submit a blank form. (X)
+* Enter letters in credit card number and zip codeand numbers in first name and last name. (X)
+* Submit a form with valid values. (V)
+
+c. Can you suggest a product solution for the most severe bug you’ve found?
+
+I think the most severe bug is that the credit card CVV number field is missing.
+To fix it I will add a new field where the user could fill in the CVV code because without it won't be possible to check the validity of the credit card.
